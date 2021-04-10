@@ -1,44 +1,209 @@
-.kontejner {
-  margin: 0 auto;
-  width: 360px;
-}
-
-header.obrazek {
-  width: 374.4px;
-  height: 394px;
+body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
   padding: auto;
-  background-position: center;
+  line-height: 1.5;
+  max-width: 365px;
+  margin: 65px auto;
 }
 
-.img {
-  width: 374.4px;
-  height: 394px;
+.obrazek {
+  width: 365 px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px 8px 0 0;
 }
 
-.nadpis {
+img {
+  width: 100%;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+h1 {
   font-family: 'Lobster', cursive;
+  font-size: 45px;
   text-align: center;
   color: #ffffff;
   background-color: #283e50;
   padding: 30px 0px;
+  margin: 0 auto;
 }
 
-.blok {
+p {
+  color: #ffffff;
+  text-align: center;
+  background-color: #283e50;
+  padding: 15px 15px;
+  margin: 0;
+}
+
+.button {
+  width: 365px;
+  font-weight: bold;
+  padding: auto;
+  margin: auto;
+}
+
+.btn1 {
+  background-color: #1fcca4;
+  padding: 12px 0 12px 0;
+}
+
+.btn2 {
+  background-color: #0197f6;
+  padding: 12px 0 12px 0;
+  border-top: 2px solid;
+  border-color: #283e50;
+}
+
+.button .btn1:hover,
+.button .btn1:focus,
+.button .btn1:active {
+  background-color: #1cbb96;
+}
+
+.button .btn2:hover,
+.button .btn2:focus,
+.button .btn2:active {
+  background-color: #0090e9;
+}
+
+/* styl pro stránku pravidla*/
+
+.bodyPravidla {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+  width: 800px;
+  height: auto;
+  display: flex;
+}
+
+.kontejner {
+  background-color: #283e50;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+  font-family: sans-serif;
+  font-size: 16px;
   text-align: center;
   color: #ffffff;
-  background-color: #283e50;
+  margin: auto;
+  padding: 0;
+  width: 800px;
+  height: auto;
+}
+
+#rule {
+  border-radius: 8px 8px 0 0;
+  padding: auto;
+}
+.pravidla {
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+  border-radius: 8px 8px 0 0;
+  padding: 30px 0px;
+  margin: 0 auto;
+}
+
+.textKpravidlum {
+  text-align: start;
+  margin: 10px;
   padding: 20px;
 }
 
-.blok1 {
-  background-color: #1fcca4;
-  text-align: center;
-  flex-basis: 50%;
-  padding: 5px 0px;
+.bod {
+  padding: 5px;
+  font-size: 20px;
 }
 
-.blok2 {
+.kolecko {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  filter: invert(100%);
+}
+
+.krizek {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  filter: invert(100%);
+}
+
+/*flex-basis: calc((100% - 20px) / 2);
+*/
+
+.ukazka {
+  border-radius: 0;
+}
+
+.instrukcePravidla {
+  width: 800px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.instructions {
+  margin: 5px;
+  width: 350px;
+  padding: 20px;
+}
+
+.popisek {
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.buttons {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 2px;
+  margin: 0;
+}
+
+.btnUvod {
+  background-color: #1fcca4;
+  padding: 12px 0 12px 0;
+}
+
+.btnPra {
   background-color: #0197f6;
-  text-align: center;
-  padding: 5px 0;
+  padding: 12px 0 12px 0;
+  border-top: 2px solid;
+  border-color: #283e50;
+}
+
+.buttons .btnUvod:hover,
+.buttons .btnUvod:focus,
+.buttons .btnUvod:active {
+  background-color: #1cbb96;
+}
+
+.buttons .btnPra:hover,
+.buttons .btnPra:focus,
+.buttons .btnPra:active {
+  background-color: #0090e9;
+}
+
+@media screen and (min-width: 800px) {
+  .bodyPravidla,
+  .kontejner,
+  .textKpravidlum,
+  .instrukcePravidla,
+  .buttons {
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
