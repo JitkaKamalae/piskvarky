@@ -1,6 +1,6 @@
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
-  background-size: 100vw 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
   font-family: sans-serif;
@@ -13,7 +13,7 @@ body {
 }
 
 .obrazek {
-  width: 365 px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px 8px 0 0;
@@ -48,11 +48,14 @@ p {
   font-weight: bold;
   padding: auto;
   margin: auto;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .btn1 {
   background-color: #1fcca4;
   padding: 12px 0 12px 0;
+  display: block;
 }
 
 .btn2 {
@@ -60,6 +63,7 @@ p {
   padding: 12px 0 12px 0;
   border-top: 2px solid;
   border-color: #283e50;
+  display: block;
 }
 
 .button .btn1:hover,
@@ -78,7 +82,7 @@ p {
 
 .bodyPravidla {
   background-image: linear-gradient(#615dad, #ffc8da);
-  background-size: 100vw 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px 8px 0 0;
@@ -197,13 +201,37 @@ p {
 }
 
 @media screen and (min-width: 800px) {
-  .bodyPravidla,
   .kontejner,
-  .textKpravidlum,
-  .instrukcePravidla,
-  .buttons {
-    width: 750px;
+  header {
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
   }
+  .buttons {
+    width: 390px;
+    margin: auto;
+  }
+
+  .body {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    margin: none;
+    width: 400px;
+  }
+
+  .bodypravidla {
+    background-size: cover;
+    margin: none;
+    background-image: linear-gradient(#615dad, #ffc8da);
+    background-repeat: none;
+    background-position: center;
+    width: 400px;
+  }
+
+  .textKpravidlum {
+    flex-wrap: nth-child(2n+1);
+  }
 }
+
+/*flex-basis: calc((100% - 20px) / 2);*/
