@@ -2,37 +2,38 @@ body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+}
+
+.uvodniStrana {
   color: #ffffff;
   font-family: sans-serif;
   font-size: 16px;
   text-align: center;
-  padding: auto;
   line-height: 1.5;
   max-width: 365px;
   margin: 65px auto;
+  border-radius: 8px 8px 0 0;
 }
 
 .obrazek {
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px 8px 0 0;
+  display: flex;
 }
 
 img {
   width: 100%;
-  display: block;
   border-radius: 8px 8px 0 0;
 }
 
+/*display: block;
+  border-radius: 8px 8px 0 0;*/
+
 h1 {
   font-family: 'Lobster', cursive;
-  font-size: 45px;
-  text-align: center;
-  color: #ffffff;
+  font-size: 44px;
   background-color: #283e50;
   padding: 30px 0px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 p {
@@ -80,29 +81,14 @@ p {
 
 /* styl pro stránku pravidla*/
 
-.bodyPravidla {
-  background-image: linear-gradient(#615dad, #ffc8da);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 8px 8px 0 0;
-  width: 800px;
-  height: auto;
-  display: flex;
-}
-
 .kontejner {
   background-color: #283e50;
-  background-position: center;
   border-radius: 8px 8px 0 0;
   font-family: sans-serif;
-  font-size: 16px;
   text-align: center;
   color: #ffffff;
   margin: auto;
   padding: 0;
-  width: 800px;
-  height: auto;
 }
 
 #rule {
@@ -142,38 +128,35 @@ p {
   filter: invert(100%);
 }
 
-/*flex-basis: calc((100% - 20px) / 2);
-*/
-
 .ukazka {
   border-radius: 0;
+  width: 100%;
 }
 
 .instrukcePravidla {
-  width: 800px;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.instructions {
-  margin: 5px;
-  width: 350px;
-  padding: 20px;
+figure.instructions {
+  width: 43%;
 }
 
+figcaption.popisek {
+  display: flex;
+}
 .popisek {
-  font-size: 14px;
-  display: inline-block;
+  text-align: center;
   padding: 10px;
 }
 
 .buttons {
   font-weight: bold;
-  font-size: 16px;
-  padding: 2px;
-  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .btnUvod {
@@ -203,21 +186,11 @@ p {
 @media screen and (min-width: 800px) {
   .kontejner,
   header {
-    width: 400px;
-    display: flex;
+    width: 750px;
     flex-wrap: wrap;
   }
   .buttons {
-    width: 390px;
-    margin: auto;
-  }
-
-  .body {
-    background-image: none;
-    background-size: cover;
-    background-position: center;
-    margin: none;
-    width: 400px;
+    width: 750px;
   }
 
   .bodypravidla {
@@ -226,12 +199,10 @@ p {
     background-image: linear-gradient(#615dad, #ffc8da);
     background-repeat: none;
     background-position: center;
-    width: 400px;
-  }
-
-  .textKpravidlum {
-    flex-wrap: nth-child(2n+1);
+    width: 750px;
   }
 }
 
-/*flex-basis: calc((100% - 20px) / 2);*/
+/*flex-basis: calc((100% - 20px) / 2);
+flex-wrap: nth-child(2n+1);
+width: calc(50% - 30px);*/
