@@ -46,7 +46,6 @@ h1 {
   background-color: #283e50;
   padding: 30px 0px;
   margin: 0;
-
 }
 
 p {
@@ -55,7 +54,7 @@ p {
   margin: 0;
 }
 
-.button {
+.butto {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
@@ -76,15 +75,15 @@ p {
   border-color: #283e50;
 }
 
-.button .btn1:hover,
-.button .btn1:focus,
-.button .btn1:active {
+.butto .btn1:hover,
+.butto .btn1:focus,
+.butto .btn1:active {
   background-color: #1cbb96;
 }
 
-.button .btn2:hover,
-.button .btn2:focus,
-.button .btn2:active {
+.butto .btn2:hover,
+.butto .btn2:focus,
+.butto .btn2:active {
   background-color: #0090e9;
 }
 
@@ -226,3 +225,105 @@ figcaption {
 /*flex-basis: calc((100% - 20px) / 2);
 flex-wrap: nth-child(2n+1);
 width: calc(50% - 30px);*/
+
+
+/*stranka hra - mřížka*/
+
+.herniPlan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   min-height: 100vh;
+}
+
+.game {
+  max-width: 80vmin;
+  font-family:sans-serif;
+  font-weight: bold;
+  font-size: 90px;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px ;
+}
+
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.nadpis {
+  font-family:'Lobster', cursive;;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.slovo {
+  font-size: 40px;
+  }
+
+.kolo {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+
+
+.motivy {
+  padding: 1px;
+  line-height:0;
+}
+
+.motiv_domecek,
+.motiv_zpet {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+
+.motiv_domecek {
+  background-color: #1fcca4 ;
+}
+
+.motivy .motiv_domecek:hover,
+.motivy .motiv_domecek:focus,
+.motivy .motiv_domecek:active {
+  background-color: #1cbb96;
+}
+
+.motiv_zpet {
+  background-color: #0197f6;
+}
+
+.motivy .motiv_zpet:hover,
+.motivy .motiv_zpet:focus,
+.motivy .motiv_zpet:active {
+  background-color: #0090e9;
+}
+
+.mrizka {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vmin;
+  height: 70vmin;
+  margin-top: 25px;
+  box-shadow: 2px 2px 10px 1px rgb(0 0 0 /40%);
+}
+
+button {
+  width: 10%;
+  border: 1px solid rgb(50, 50,50);
+  background-color: rgba(270, 270, 270, 0.3);
+  padding: 0;
+}
+
+
+.mrizka button:hover,
+.mrizka button:focus,
+.mrizka button:active {
+cursor:pointer;
+background-color: rgba (200, 200, 200, 0.1);}
