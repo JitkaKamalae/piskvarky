@@ -1,32 +1,44 @@
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
+  min-height: 100vh;
+  margin: 0;
+  padding: 50px;
+     }
 
 .uvodniStrana {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   color: #ffffff;
   font-family: sans-serif;
-  font-size: 16px;
-  text-align: center;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .txt,
+  .p {
+    width: 360px
+    }
+
+.uvodni-obr {
+  width: 360px;
+  box-sizing: border-box;
+  border-radius: 8px 8px 0 0;
+}
+/*font-size: 16px;
+  align-items: center;
+  
   line-height: 1.5;
   max-width: 365px;
   margin: 65px auto;
-  border-radius: 8px 8px 0 0;
-}
-
 .obrazek {
-  display: flex;
+  display: flex;*/
 }
 
 img {
   width: 100%;
-  border-radius: 8px 8px 0 0;
 }
-
-/*display: block;
-  border-radius: 8px 8px 0 0;*/
 
 h1 {
   font-family: 'Lobster', cursive;
@@ -34,37 +46,34 @@ h1 {
   background-color: #283e50;
   padding: 30px 0px;
   margin: 0;
+
 }
 
 p {
-  color: #ffffff;
-  text-align: center;
   background-color: #283e50;
-  padding: 15px 15px;
+  padding: 10px 10px 20px 15px;
   margin: 0;
 }
 
 .button {
-  width: 365px;
   font-weight: bold;
-  padding: auto;
-  margin: auto;
   color: #ffffff;
   text-decoration: none;
+  line-height: 1.6;
+  display: block ;
+  width: 360px;
 }
 
 .btn1 {
   background-color: #1fcca4;
   padding: 12px 0 12px 0;
-  display: block;
-}
+  }
 
 .btn2 {
   background-color: #0197f6;
   padding: 12px 0 12px 0;
   border-top: 2px solid;
   border-color: #283e50;
-  display: block;
 }
 
 .button .btn1:hover,
@@ -82,26 +91,23 @@ p {
 /* styl pro stránku pravidla*/
 
 .kontejner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background-color: #283e50;
   border-radius: 8px 8px 0 0;
   font-family: sans-serif;
-  text-align: center;
   color: #ffffff;
   margin: auto;
-  padding: 0;
 }
 
-#rule {
-  border-radius: 8px 8px 0 0;
-  padding: auto;
+.povidani {
+margin-top: 20px;
+margin-bottom: 30px;
+border-radius: 8px 8px 0 0;
 }
-.pravidla {
-  font-family: 'Lobster', cursive;
-  font-size: 45px;
-  border-radius: 8px 8px 0 0;
-  padding: 30px 0px;
-  margin: 0 auto;
-}
+
 
 .textKpravidlum {
   text-align: start;
@@ -112,6 +118,10 @@ p {
 .bod {
   padding: 5px;
   font-size: 20px;
+}
+
+.img {
+width: 100%;
 }
 
 .kolecko {
@@ -128,40 +138,48 @@ p {
   filter: invert(100%);
 }
 
-.ukazka {
-  border-radius: 0;
-  width: 100%;
-}
 
 .instrukcePravidla {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 10px;
+ margin: 20px;
+ width: auto;
 }
 
 figure.instructions {
-  width: 43%;
+ width: 100%;
 }
 
-figcaption.popisek {
-  display: flex;
+*, :after, :before {
+  box-sizing: border-box;
 }
-.popisek {
+
+.instrukcePravidla figure img{
+   display: flex;
+  width: 100%;
+}
+
+
+figcaption {
   text-align: center;
   padding: 10px;
-}
+ }
 
 .buttons {
-  font-weight: bold;
   display: flex;
+  text-align: center;
+  font-weight: bold;  
   justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  color: #ffffff;
 }
 
 .btnUvod {
   background-color: #1fcca4;
   padding: 12px 0 12px 0;
+  width: 100%;
 }
 
 .btnPra {
@@ -169,6 +187,7 @@ figcaption.popisek {
   padding: 12px 0 12px 0;
   border-top: 2px solid;
   border-color: #283e50;
+  width: 100%;
 }
 
 .buttons .btnUvod:hover,
@@ -185,21 +204,22 @@ figcaption.popisek {
 
 @media screen and (min-width: 800px) {
   .kontejner,
-  header {
+  .rule,
+  .povidani {
     width: 750px;
-    flex-wrap: wrap;
-  }
+    }
+  figure.instructions {
+      margin: 15px;
+      width: calc(50% - 30px);
+    }
+  
   .buttons {
-    width: 750px;
+    width: 100%;
   }
 
-  .bodypravidla {
-    background-size: cover;
-    margin: none;
-    background-image: linear-gradient(#615dad, #ffc8da);
-    background-repeat: none;
-    background-position: center;
-    width: 750px;
+  .bodypravidla,
+  .povidani {
+       width: 750px;
   }
 }
 
