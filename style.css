@@ -234,6 +234,7 @@ width: calc(50% - 30px);*/
   flex-direction: column;
   align-items: center;
    min-height: 100vh;
+   width: 100%;
 }
 
 .game {
@@ -258,7 +259,7 @@ width: calc(50% - 30px);*/
   min-width: 100%;
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .slovo {
@@ -276,6 +277,13 @@ width: calc(50% - 30px);*/
   padding: 1px;
   line-height:0;
 }
+.dum,
+.znovu {
+  display: flex;
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 .motiv_domecek,
 .motiv_zpet {
@@ -283,7 +291,10 @@ width: calc(50% - 30px);*/
   border-radius: 5px;
   margin: 5px 0;
 }
-
+.zpet,
+.domek {
+  width:45px;
+}
 
 .motiv_domecek {
   background-color: #1fcca4 ;
