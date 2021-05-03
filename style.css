@@ -241,7 +241,7 @@ width: calc(50% - 30px);*/
   max-width: 80vmin;
   font-family:sans-serif;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 80px;
   text-align: center;
   color: #ffffff;
   padding: 20px ;
@@ -325,6 +325,12 @@ width: calc(50% - 30px);*/
   box-shadow: 2px 2px 10px 1px rgb(0 0 0 /40%);
 }
 
+.butKlik {
+  background-color: transparent;
+  transition: background-size 0.25s;
+  background-size: 0%;
+}
+
 button {
   width: 10%;
   border: 1px solid rgb(50, 50,50);
@@ -333,8 +339,26 @@ button {
 }
 
 
-.mrizka button:hover,
-.mrizka button:focus,
-.mrizka button:active {
-cursor:pointer;
-background-color: rgba (200, 200, 200, 0.1);}
+.butKlik:hover,
+.butKlik:focus,
+.butKlik:active {
+background-color: rgba(245, 245, 245, 0.6);}
+
+
+/*čast pro hru k javě*/
+
+.sachovnice--circle {
+  background-image: url('circle.svg');
+  background-repeat:no-repeat;
+  background-size: 75%;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.sachovnice--cross {
+  background-image: url('cross.svg');
+  background-repeat:no-repeat;
+  background-size: 75%;
+  background-position-x: center;
+  background-position-y: center;
+}
